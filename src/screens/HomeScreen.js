@@ -26,6 +26,32 @@ const HomeScreen = (props) => {
       >
         <Text>Go to Image Demo</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate("Counter")}
+      >
+        <Text>Go to Counter Demo</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate("Color")}
+      >
+        <Text>Go to ColorScreen Demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate("Square")}
+      >
+        <Text>Go to SquareScreen Demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate("Text")}
+      >
+        <Text>Go to TextScreen Demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
